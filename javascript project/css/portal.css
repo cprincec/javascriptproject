@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body   {
+    
+    background-image: url("../images/ophthalmology-background-with-doctor-ophthalmologist-check-vision-with-eye-test-chart-vector-hand-drawn-illustration-man-optometrist-glasses-drops-machines-eyesight-.webp");
+    display: flex;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    line-height: 2rem;
+    font-family: 'Varela Round', 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #004a9e;
+}
+
+.container {
+    background-color: #d1e6ff;
+    border: .5px solid gray;
+    border-radius: 20px;
+    padding: 40px 50px;
+    box-shadow: 1px 1px 5px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+h1  {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 2px 1.5px white;
+    color: #004a9e;
+}
+
+.form   {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 10px 11px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    border: .5px solid aliceblue;
+    transition: .7s;
+    outline: none;
+}
+
+input:focus    {
+    border: .5px solid #004a9e;
+}
+
+label   {
+    font-weight: 500;
+}
+
+.login  {
+    display: flex;
+    margin: 15px 0 5px 0;
+    align-self: center;
+    font-size: 1.2rem;
+    padding: 7px 40px;
+    background-color: #004a9e;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.login:hover    {
+    background-color: #063a75;
+    transition-duration: .5s;
+}
+
+
+
+
+
