@@ -2,199 +2,129 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admission - National Secondary School, Awka</title>
-    <meta name="description" content="Admission requirements and form for National Secondary School.">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Admission requirements and form for National Secondary School." />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Varela+Round&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-
-    <header>
-        <picture><img src="images/IMG-20220301-WA0001.jpg" alt="logo"></picture>
-        <div class="first-header">
-
-            <h1>National Secondary School Awka</h1>
-            <div class="contact">
-                <p>Call Us: 08100000000</p>
-                <p>Email: nationalschools@gmail.com</p>
-                <p>Mon - Friday, 8am - 5pm</p>
+    <div class="form">
+        <h3><strong>ADMISSION FORM</strong></h3>
+        <p>Please fill the form below to begin the process of admission:</p>
+        <div class="space2"></div>
+        <div class="form-div">
+            <div class="lname-div">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" required />
             </div>
-            <div class="social-top">
-                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook1.png"
-                        alt="Facebook Logo"></a>
-                <a href="https://www.youtube.com" target="_blank"><img src="images/youtube.png" alt="Youtube Logo"></a>
-                <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter logo"></a>
+
+            <div class="fname-div">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" required />
             </div>
-        </div>
 
-        <nav class="nav-top">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">Admission</a></li>
-                <li><a href="prospectus.html">Prospectus</a></li>
-                <li><a href="index.html">History</a></li>
-                <li><a href="index.html">Gallery</a></li>
-                <li><a href="portal.html">Portal</a></li>
-            </ul>
-        </nav>
-    </header>
-
-
-    <main>
-        <picture class="banner2"><img
-                src="images/arrangement-with-school-bag-supplies_23-2148278198.webp"
-                alt="school building"></picture>
-        <div class="line-1"></div>
-
-        <h2>Admission</h2>
-        <div class="line"></div>
-        <div class="space"></div>
-        <div class="space"></div>
-        <div class="space"></div>
-        <div class="requirement-form">
-            <div class="requirement">
-                <h3>Basic steps for Admission of students into NATIONAL SECONDARY SCHOOL AWKA: </h3>
-                <br>
-                <ol>
-                    <li>Inquiry visitation by parents</li>
-                    <li>Purchase of Admission form</li>
-                    <li>Release of Evaluations / Interviews Results</li>
-                    <li> Payment of relevant fees and registration of pupils/student.</li>
-                    <li>Welcome Briefing/Issuance of class admission slip</li>
-                    <li>The schools also offer Transportation Service at Extra Cost</li>
-                </ol>
-                <br>
-                <br><span><strong>Bank Account: Diamond Bank ,Account Name :., Account No:</strong></span>
-                <br><span><strong>Bank Account: GT Bank ,Account Name :., Account No:</strong></span>
-                <br>
-                <br>
-                <p><em>For detailed explanation, please call any of the following number: 08033912398</em></p>
-                <br>
-                <br>
-                <p><strong>Note: </strong><em>Admission into NATIONAL SECONDARY SCHOOL AWKA is open to students
-                        regardless of race, sex, religion, ethnicity or nationality and is accompanied by the full
-                        rights and privileges due to every pupil/students of the school.</em></p>
-
+            <div class="mname-div">
+                <label for="mname">Middle Name</label>
+                <input type="text" id="mname" name="middlename" />
             </div>
-            <div class="form">
-                <h3><strong>ADMISSION FORM</strong></h3>
-                <P>Please fill the form below to begin the process of admission:</P>
-                <div class="space2"></div>
-                <form action="#">
-                    <div class="lname-div">
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" required>
-                    </div>
 
-                    <div class="fname-div">
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="firstname" required>
-                    </div>
+            <div class="dob-div">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required />
+            </div>
 
-                    <div class="mname-div">
-                        <label for="mname">Middle Name</label>
-                        <input type="text" id="mname" name="middlename">
-                    </div>
+            <div class="gender-div">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value=""></option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
 
-                    <div class="dob-div">
-                        <label for="dob">Date of Birth:</label>
-                        <input type="date" id="dob" name="dob" required>
-                    </div>
+            <div class="raddress-div">
+                <label for="raddress">Residential Address: </label>
+                <input type="text" id="raddress" name="raddress" required />
+            </div>
 
-                    <div class="gender-div">
-                        <label for="gender">Gender</label>
-                        <select id="gender" name="gender" required>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                        </select>
-                    </div>
+            <div class="nation-div">
+                <label for="nationality">Nationality</label>
+                <input type="text" id="nationality" name="nationality" required />
+            </div>
 
-                    <div class="raddress-div">
-                        <label for="raddress">Residential Address: </label>
-                        <input type="text" id="raddress" name="raddress" required>
-                    </div>
+            <div class="sorigin-div">
+                <label for="sorigin">State of Origin</label>
+                <input type="text" id="sorigin" name="sorigin" required />
+            </div>
 
-                    <div class="nation-div">
-                        <label for="nationality">Nationality</label>
-                        <input type="text" id="nationality" name="nationality" required>
-                    </div>
+            <div class="lga-div">
+                <label for="lga">LGA</label>
+                <input type="text" id="lga" name="lga" required />
+            </div>
 
-                    <div class="sorigin-div">
-                        <label for="sorigin">State of Origin</label>
-                        <input type="text" id="sorigin" name="sorigin" required>
-                    </div>
-
-                    <div class="lga-div">
-                        <label for="lga">LGA</label>
-                        <input type="text" id="lga" name="lga" required>
-                    </div>
-
-                    <div class="class-div">
-                        <label for="class">Class of Entry</label>
-                        <select id="class" name="class" required>
-                            <option value="jss1">JSS 1</option>
-                            <option value="jss2">JSS 2</option>
-                            <option value="jss3">JSS 3</option>
-                            <option value="ss1">SS 1</option>
-                            <option value="ss2">SS 2</option>
-                            <option value="ss3">SS 3</option>
-                        </select>
-                    </div>
-                    <div class="submit-container"><button class="submit" type="submit">Submit Form</button></div>
-                </form>
+            <div class="class-div">
+                <label for="class">Class of Entry</label>
+                <select id="class" name="class" required>
+                    <option value=""></option>
+                    <option value="jss1">JSS 1</option>
+                    <option value="jss2">JSS 2</option>
+                    <option value="jss3">JSS 3</option>
+                    <option value="ss1">SS 1</option>
+                    <option value="ss2">SS 2</option>
+                    <option value="ss3">SS 3</option>
+                </select>
+            </div>
+            <div class="submit-container">
+                <button class="submit" type="submit">Submit Form</button>
             </div>
         </div>
+        
+    </div>
 
-    </main>
-    <div class="space"></div>
-    <div class="space"></div>
-    <div class="space"></div>
-    <div class="space"></div>
-    <footer>
-        <div class="foot">
-            <nav class="nav-down">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="admission.html">Admission</a></li>
-                    <li><a href="prospectus.html">Prospectus</a></li>
-                    <li><a href="index.html">History</a></li>
-                </ul>
-            </nav>
 
-            <div class="address">
-                <h3 class="address-head">Address:</h3>
-                <p class="address-para">9 Nweke Nwobuchi Street Umudioka</p>
-                <p class="address-para">Opposite 252 Ziks Avenue</p>
-                <p class="address-para">P.O. Box 71</p>
-                <p class="address-para">Anambra State</p>
-
-                <h3 class="visit">Visiting Time:</h3>
-                <p class="address-para">Mon - Friday, 8am - 5pm</p>
-
+    <section class="profile-section">
+        <section class="profile-heading">
+            <h1>Student Profile</h1>
+            <h2 id="studentName"></h2>
+            <h4>Student Number: <span id="studentNo"></span></h4>
+        </section>
+        <section>
+            <h3>Student Information</h3>
+            <div>
+                <h4>Gender:</h4>
+                <p id="profileGender"></p>
             </div>
-            <div class="contact-social">
-                <div class="contact-down">
-                    <p>Call Us: 08100000000</p>
-                    <p>Email: nationalschools@gmail.com</p>
-                </div>
-                <div class="social">
-                    <a href="https://www.facebook.com" target="_blank"><img src="images/facebook1.png"
-                            alt="Facebook Logo"></a>
-                    <a href="https://www.youtube.com" target="_blank"><img src="images/youtube.png"
-                            alt="Youtube Logo"></a>
-                    <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png"
-                            alt="Twitter logo"></a>
-                </div>
-
+            <div>
+                <h4>Date of Birth:</h4>
+                <p id="profileDob"></p>
             </div>
-        </div>
-        <p class="copyright">&copy; 2022 - Prince Chukwu - WDD130 Final Project</p>
-
-    </footer>
+            <div>
+                <h4>Address:</h4>
+                <p id="profileAddress"></p>
+            </div>
+            <div>
+                <h4>Nationality:</h4>
+                <p id="profileNationality"></p>
+            </div>
+            <div>
+                <h4>State:</h4>
+                <p id="profileState"></p>
+            </div>
+            <div>
+                <h4>LGA</h4>
+                <p id="profileLga"></p>
+            </div>
+            <div>
+                <h4>Class:</h4>
+                <p id="profileClass"></p>
+            </div>
+        </section>
+    </section>
     <script src="./scripts/admission.js"></script>
 </body>
 

@@ -1,20 +1,19 @@
-//url for student database
-const url = "https://cprincec.github.io/javascriptproject/javascriptproject/students.json";
-
-// student database object variable
-var students;
-var student = {};
-
-
-//generate student object
-async function getstudent(url) {
-    let response = await fetch(url);
-    students = await response.json();
-};
-
 // Create new student object in student database
 // using information entered in registration form.
 function createStudent() {
+    const student = {
+        firstName: "",
+        middleName: "",
+        lastName: "",
+        dateOfBirth: "",
+        gender: "",
+        Address: "",
+        nationality: "",
+        state: "",
+        lga: "",
+        class: "",
+        studentNumber: ""
+    }
     let lastName = document.querySelector("#lname").value;
     let firstName = document.querySelector("#fname").value;
     let middleName = document.querySelector("#mname").value;
@@ -36,29 +35,38 @@ function createStudent() {
     student.state = stateOfOrigin;
     student.lga = lga;
     student.class = sClass;
-    student.studentNumber = Math.random();
-    
+    student.studentNumber = Math.floor(Math.random() * 100) + 1;
+    createProfile(student);
 };
 
 
+function createProfile(student)    {
+    let studentNameHtml = document.querySelector("#studentName");
+    let genderHtml = document.querySelector("#profileGender");
+    let DOBHtml = document.querySelector("#profileDob");
+    let addressHtml = document.querySelector("#profileAddress");
+    let nationalityHtml = document.querySelector("#profileNationality");
+    let stateHtml = document.querySelector("#profileState");
+    let lgaHtml = document.querySelector("#profileLga");
+    let classHtml = document.querySelector("#profileClass");
+    let studentNoHtml = document.querySelector("#studentNo");
+
+    studentNameHtml.textContent = student.firstName + " " + student.middleName 
+                                  + " " + student.lastName;
+    genderHtml.textContent = student.gender;
+    DOBHtml.textContent = student.dateOfBirth;
+    addressHtml.textContent = student.Address;
+    nationalityHtml.textContent = student.nationality;
+    stateHtml.textContent = student.state;
+    lgaHtml.textContent = student.lga;
+    classHtml.textContent = student.class;
+    studentNoHtml.textContent = student.studentNumber;
+};
+
+document.querySelector(".submit").addEventListener("click", createStudent);
 
 
-// function createProfile()    {
-//     let genderHtml = document.querySelector("#profileGender")
-//     let DOBHtml = document.querySelector("#profileDob")
-//     let addressHtml = document.querySelector("#profileAddress")
-//     let nationalityHtml = document.querySelector("#profileNationality")
-//     let stateHtml = document.querySelector("#profileState")
-//     let lgaHtml = document.querySelector("#profileLga")
-//     let classHtml = document.querySelector("#profileClass")
 
-    
-
-// }
-
-createStudent()
-getstudent(url);
-console.log(students)
 
 
 
